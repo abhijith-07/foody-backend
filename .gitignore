@@ -1,4 +1,5 @@
 env/
 foody/__pycache__
+foody/settings/__pycache__
 
 db.sqlite3

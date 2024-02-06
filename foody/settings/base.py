@@ -2,12 +2,9 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
-SECRET_KEY = "django-insecure-cmibwtbj60b=6y#9!y$2k=&nxxll_sbs((^$920r=c-+yzs86)"
-
 DEBUG = True
 
-ALLOWED_HOSTS = []
+SECRET_KEY = "django-insecure-cmibwtbj60b=6y#9!y$2k=&nxxll_sbs((^$920r=c-+yzs86)"
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -47,13 +44,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "foody.wsgi.application"
-
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
-}
 
 
 AUTH_PASSWORD_VALIDATORS = [
