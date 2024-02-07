@@ -5,7 +5,7 @@ class Products(models.Model):
     name = models.CharField(max_length=200)
     price = models.FloatField()
     text = models.CharField(max_length=500)
-    #image
+    image = models.ImageField(upload_to='images')
     MEAL_TYPES = [
         ("dinner","dinner"),
         ("breakfast","breakfast"),
