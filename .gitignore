@@ -3,6 +3,7 @@ foody/__pycache__/
 foody/settings/__pycache__/
 api/__pycache__/
 api/migrations/
+references/
 
 foody/settings/.env
-db.sqlite3
+foody/db.sqlite3
