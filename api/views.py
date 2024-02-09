@@ -4,6 +4,6 @@ from .models import Product
 from .serializers import ProductSerializer
 
 class ProductListView(ListAPIView):
-    queryset = Product.objects.all()  # Set the queryset here
+    queryset = Product.objects.all()
     serializer_class = ProductSerializer
-    permission_classes = [DjangoModelPermissionsOrAnonReadOnly]  # You can keep this permission class if needed
+    permission_classes = [DjangoModelPermissionsOrAnonReadOnly]

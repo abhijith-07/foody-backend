@@ -12,3 +12,6 @@ class Product(models.Model):
         ("lunch", "lunch")
     ]
     type = models.CharField(max_length=10, choices=MEAL_TYPES)
+
+    def __str__(self):
+        return self.name
