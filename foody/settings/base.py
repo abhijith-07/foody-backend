@@ -86,12 +86,6 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
-    ]
-}
-
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
 ]
@@ -99,3 +93,7 @@ CORS_ALLOWED_ORIGINS = [
 CORS_ALLOW_METHODS = (
     "GET",
 )
+
+MEDIA_ROOT = BASE_DIR / "media"
+
+MEDIA_URL = '/media/'
