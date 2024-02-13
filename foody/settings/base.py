@@ -1,15 +1,14 @@
 from pathlib import Path
+from dotenv import load_dotenv
+import os
 
-import environ
-
-env = environ.Env()
-environ.Env.read_env()
+load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 DEBUG = True
 
-SECRET_KEY = env("SECRET_KEY")
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 INSTALLED_APPS = [
     "django.contrib.admin",
